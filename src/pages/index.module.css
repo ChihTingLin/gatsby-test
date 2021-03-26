@@ -16,3 +16,22 @@
 .column {
   width: 48%;
 }
+
+@media screen and (max-width: 768px) {
+  .heroImage {
+    padding-bottom: 300px;
+    background-size: auto 100%;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .section:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+}

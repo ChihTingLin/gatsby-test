@@ -13,6 +13,7 @@ export default function Layout({ children }) {
           alt="logo"
         />
       </div>
+      <div className={styles.placeholder} />
       {children}
       <div className={styles.footer}></div>
     </>
