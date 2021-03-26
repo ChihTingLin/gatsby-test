@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.header {
+  box-shadow: 0 0 8px #cccccc;
+  padding: 10px 10%;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.footer {
+  box-shadow: 0 0 8px #cccccc;
+  height: 200px;
+}
