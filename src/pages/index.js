@@ -1,17 +1,38 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import Container from "../components/Container";
+import Slider from "../components/Slider";
 import { StaticImage } from "gatsby-plugin-image";
 import styles from "./index.module.css";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <div className={styles.heroImage} />
+      <Slider wrapperStyle={{ marginBottom: "100px" }}>
+        <div
+          className={styles.heroImage}
+          style={{
+            backgroundImage: `url(https://images.unsplash.com/photo-1586936128167-4ec32eb179cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1550&q=80)`,
+          }}
+        />
+        <div
+          className={styles.heroImage}
+          style={{
+            backgroundImage: `url(https://images.unsplash.com/photo-1598564506973-845f643298fd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)`,
+          }}
+        />
+        <div
+          className={styles.heroImage}
+          style={{
+            backgroundImage: `url(https://images.unsplash.com/photo-1551404973-761c83cd8339?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80)`,
+          }}
+        />
+      </Slider>
       <Container>
         <div className={styles.section}>
           <div className={styles.column}>
             <StaticImage
+              alt=""
               style={{ borderRadius: "6px" }}
               src="https://images.unsplash.com/photo-1588883707883-55d9d34ee523?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
             />
@@ -50,6 +71,7 @@ const IndexPage = () => {
           </div>
           <div className={styles.column}>
             <StaticImage
+              alt=""
               style={{ borderRadius: "6px" }}
               src="https://images.unsplash.com/photo-1604746559951-318ad80c8bb7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
             />
@@ -58,6 +80,7 @@ const IndexPage = () => {
         <div className={styles.section}>
           <div className={styles.column}>
             <StaticImage
+              alt=""
               style={{ borderRadius: "6px" }}
               src="https://images.unsplash.com/photo-1555015827-d6f9ed722978?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
             />
@@ -96,6 +119,7 @@ const IndexPage = () => {
           </div>
           <div className={styles.column}>
             <StaticImage
+              alt=""
               style={{ borderRadius: "6px" }}
               src="https://images.unsplash.com/photo-1570806516998-c4c167ee2f55?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1567&q=80"
             />
